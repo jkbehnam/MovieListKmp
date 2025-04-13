@@ -1,14 +1,13 @@
 package org.example.project.data.api
 
 
-import com.example.movieslist.data.model.MovieDetailsDto
-import com.example.movieslist.data.model.MoviesListDto
+import org.example.project.data.api.model.MovieDetailsDto
+import org.example.project.data.api.model.MoviesListDto
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
 import io.ktor.client.request.parameter
 import io.ktor.client.request.url
-import io.ktor.client.statement.HttpResponse
 
 class TMDBApi(private val httpClient: HttpClient) {
 

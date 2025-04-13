@@ -1,7 +1,7 @@
-package com.example.movieslist.data.model
+package org.example.project.data.api.model
 
-import com.example.movieslist.domain.model.Movie
-import com.example.movieslist.domain.model.MoviesList
+import org.example.project.domain.model.Movie
+import org.example.project.domain.model.MoviesList
 import kotlinx.serialization.SerialName
 
 data class MovieDetailsDto(
@@ -46,7 +46,7 @@ data class MovieDetailsDto(
     val voteCount: Int
 )
 
-fun MoviesListDto?.convertMovieListDto(): MoviesList{
+fun MoviesListDto?.convertMovieListDto(): MoviesList {
     val movies = this?.movieDto?.map { it ->
         Movie(
             id = it.id,

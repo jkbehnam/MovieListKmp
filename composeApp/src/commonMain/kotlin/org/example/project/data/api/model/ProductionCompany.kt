@@ -1,4 +1,4 @@
-package com.example.movieslist.data.model
+package org.example.project.data.api.model
 
 import kotlinx.serialization.SerialName
 
