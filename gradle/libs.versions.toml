@@ -15,8 +15,7 @@ compose-multiplatform = "1.7.3"
 junit = "4.13.2"
 kotlin = "2.1.10"
 kotlinx-coroutines = "1.10.1"
-koin = "3.6.0-Beta4"
-koin-compose = "1.2.0-Beta4"
+koin = "4.0.1"
 ktorClient = "3.0.3"
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -37,8 +36,8 @@ kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-co
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
-koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin-compose" }
-koin-composeVM = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin-compose" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
+koin-composeVM = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin" }
 
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClient" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClient" }
@@ -47,6 +46,7 @@ ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "k
 ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktorClient" }
 ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorClient" }
 ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktorClient" }
+ktor-client-wasm = { module = "io.ktor:ktor-client-wasm", version.ref = "ktorClient" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
