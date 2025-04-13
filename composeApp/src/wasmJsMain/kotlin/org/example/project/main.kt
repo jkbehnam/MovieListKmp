@@ -1,12 +1,12 @@
 package org.example.project
 
-import androidx.compose.ui.ExperimentalComposeUiApi
-import androidx.compose.ui.window.ComposeViewport
-import kotlinx.browser.document
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
+import org.jetbrains.compose.web.renderComposable
 
-@OptIn(ExperimentalComposeUiApi::class)
 fun main() {
-    ComposeViewport(document.body!!) {
+    initKoin()
+    renderComposable(rootElementId = "root") {
         App()
     }
 }

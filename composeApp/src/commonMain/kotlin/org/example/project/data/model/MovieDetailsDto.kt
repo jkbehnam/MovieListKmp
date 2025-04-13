@@ -1,15 +1,20 @@
-package org.example.project.data.api.model
+package org.example.project.data.model
 
 import org.example.project.domain.model.Movie
 import org.example.project.domain.model.MoviesList
 import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+import org.example.project.data.api.model.Genre
+import org.example.project.data.api.model.MoviesListDto
+import org.example.project.data.api.model.ProductionCompany
+import org.example.project.data.api.model.ProductionCountry
+import org.example.project.data.api.model.SpokenLanguage
 
+@Serializable
 data class MovieDetailsDto(
     val adult: Boolean,
     @SerialName("backdrop_path")
     val backdropPath: String,
-    @SerialName("belongs_to_collection")
-    val belongsToCollection: Any,
     val budget: Int,
     val genres: List<Genre>,
     val homepage: String,

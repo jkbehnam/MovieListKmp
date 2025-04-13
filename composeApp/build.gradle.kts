@@ -9,6 +9,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    kotlin("plugin.serialization") version "2.1.10"
 }
 
 kotlin {
@@ -82,6 +83,9 @@ kotlin {
         val wasmJsMain by getting {
             dependencies {
                 implementation(libs.ktor.client.js)
+                implementation(libs.koin.core)
+                implementation(libs.koin.compose)
+                implementation(libs.koin.composeVM)
             }
         }
     }

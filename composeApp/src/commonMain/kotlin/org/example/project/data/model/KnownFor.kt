@@ -2,7 +2,7 @@ package org.example.project.data.api.model
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-
+@Serializable
 data class KnownFor(
     val adult: Boolean,
     @SerialName("backdrop_path")

@@ -1,8 +1,9 @@
 package org.example.project.data.api.model
 
 import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-
+@Serializable
 data class SpokenLanguage(
     @SerialName("english_name")
     val englishName: String,
