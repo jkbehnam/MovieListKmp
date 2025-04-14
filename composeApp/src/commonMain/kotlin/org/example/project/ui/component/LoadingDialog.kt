@@ -41,9 +41,10 @@ fun LoadingDialog() {
         }
 
 }
+/*
 
 @Preview
 @Composable
 private fun Preview() {
     LoadingDialog()
-}
+}*/
