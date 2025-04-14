@@ -5,10 +5,8 @@ import org.example.project.domain.model.MoviesList
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import org.example.project.data.api.model.Genre
-import org.example.project.data.api.model.MoviesListDto
 import org.example.project.data.api.model.ProductionCompany
 import org.example.project.data.api.model.ProductionCountry
-import org.example.project.data.api.model.SpokenLanguage
 
 @Serializable
 data class MovieDetailsDto(

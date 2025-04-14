@@ -6,7 +6,7 @@ import io.ktor.client.request.get
 import io.ktor.client.request.parameter
 import io.ktor.client.request.url
 import org.example.project.data.model.MovieDetailsDto
-import org.example.project.data.api.model.MoviesListDto
+import org.example.project.data.model.MoviesListDto
 
 class TMDBApi(private val httpClient: HttpClient) {
     private val baseUrl = "https://api.themoviedb.org/3"

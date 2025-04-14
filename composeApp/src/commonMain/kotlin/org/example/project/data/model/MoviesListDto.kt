@@ -1,7 +1,8 @@
-package org.example.project.data.api.model
+package org.example.project.data.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import org.example.project.data.api.model.MovieDto
 
 @Serializable
 data class MoviesListDto(

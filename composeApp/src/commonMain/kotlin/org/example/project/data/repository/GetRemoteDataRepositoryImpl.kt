@@ -17,8 +17,11 @@ class GetRemoteDataRepositoryImpl(
 
     override suspend fun getMovieDetail(movieId: Long): MovieDetailsDto? {
         return try {
+            println("Attempting to fetch movie details for ID: $movieId")
             api.getMovieDetails(movieId = movieId)
         } catch (e: Exception) {
+            println("Error fetching movie details: ${e.message}")
+            e.printStackTrace()
             null
         }
     }
