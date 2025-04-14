@@ -1,5 +1,6 @@
 package org.example.project.ui.movieDetails.component
 
+import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -18,9 +19,8 @@ fun MovieGenres(genres: List<String>) {
     }
 }
 
-/*
 @Preview
 @Composable
 private fun Preview() {
     MovieGenres(listOf("Drama", "Horror"))
-}*/
+}

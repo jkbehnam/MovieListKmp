@@ -14,10 +14,8 @@ import org.example.project.domain.usecase.GetPopularMovieListUseCase
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
-class MovieListViewModel :
+class MovieListViewModel(private val getPopularMovieListUseCase: GetPopularMovieListUseCase) :
     ViewModel(), KoinComponent {
-
-        private val getPopularMovieListUseCase: GetPopularMovieListUseCase by inject()
 
     private val _state = MutableStateFlow(ScreenState())
     val state: StateFlow<ScreenState> = _state

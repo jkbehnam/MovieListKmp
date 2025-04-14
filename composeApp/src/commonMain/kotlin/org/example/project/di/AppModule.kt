@@ -39,6 +39,7 @@ fun appModule(engine: HttpClientEngine): Module = module {
                 level = LogLevel.ALL
             }
             defaultRequest {
+                url("https://api.themoviedb.org/3/")
                 header("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNjEwMzM2OTZhNzIxNmEwYmFmZWE0MzBkMzgwZThlMiIsIm5iZiI6MTczMTgyNzMwNC43MzQyMzEyLCJzdWIiOiI2NTg4NDY5MzQ3NzIxNTVhMGI0M2IxMjQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.s5Ym7emqzCyGKZ98Gjff3fVJP3MoWJ6ICdIpaJEz3Ao")
                 header("accept", "application/json")
             }
@@ -52,6 +53,6 @@ fun appModule(engine: HttpClientEngine): Module = module {
     single<GetPopularMovieListUseCase> { GetPopularMovieListUseCase(get<GetRemoteDataRepository>()) }
     single<GetMovieDetailsUseCase> { GetMovieDetailsUseCase(get<GetRemoteDataRepository>()) }
 
-   viewModel { MovieListViewModel() }
-   viewModel { MovieDetailsViewModel() }
+   viewModel { MovieListViewModel(get()) }
+   viewModel { MovieDetailsViewModel(get()) }
 }

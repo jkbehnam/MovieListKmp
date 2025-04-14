@@ -27,7 +27,6 @@ fun App() {
     val navController = rememberNavController()
     val backStack by navController.currentBackStack.collectAsState()
 
-    // Force LTR layout
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Ltr) {
         Theme(darkTheme = darkTheme) {
             Scaffold(topBar = {

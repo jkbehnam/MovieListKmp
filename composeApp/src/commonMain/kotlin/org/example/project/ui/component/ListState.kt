@@ -1,5 +1,6 @@
 package org.example.project.ui.component
 
+import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -53,7 +54,7 @@ fun  ListState(
 
 }
 
-/*@Preview(name = "light", uiMode = android.content.res.Configuration.UI_MODE_NIGHT_NO)
+@Preview
 @Composable
 private fun Preview() {
     ListState(isLoading = false, hasError = true) {
@@ -61,11 +62,5 @@ private fun Preview() {
     }
 }
 
-@Preview(name = "dark", uiMode = android.content.res.Configuration.UI_MODE_NIGHT_YES)
-@Composable
-private fun PreviewDark() {
-    ListState(isLoading = false, hasError = true) {
 
-    }
-}*/
 

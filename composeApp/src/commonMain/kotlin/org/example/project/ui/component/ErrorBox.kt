@@ -61,7 +61,7 @@ fun BoxScope.ErrorBox(
     }
 }
 
-@Preview
+@androidx.compose.desktop.ui.tooling.preview.Preview
 @Composable
 private fun Preview() {
     Box { ErrorBox(Modifier) { } }

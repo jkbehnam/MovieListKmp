@@ -9,17 +9,15 @@ import org.example.project.data.model.MovieDetailsDto
 import org.example.project.data.model.MoviesListDto
 
 class TMDBApi(private val httpClient: HttpClient) {
-    private val baseUrl = "https://api.themoviedb.org/3"
-
     suspend fun getMovieDetails(movieId: Long): MovieDetailsDto {
         return httpClient.get {
-            url("$baseUrl/movie/$movieId")
+            url("movie/$movieId")
         }.body()
     }
 
     suspend fun getMovieList(language: String, page: Int): MoviesListDto {
         return httpClient.get {
-            url("$baseUrl/movie/popular")
+            url("movie/popular")
             parameter("language", language)
             parameter("page", page)
         }.body()

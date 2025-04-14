@@ -6,15 +6,13 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+import org.example.project.common.AppEvent
+import org.example.project.data.model.MovieDetailsDto
 import org.example.project.domain.model.Response
 import org.example.project.domain.usecase.GetMovieDetailsUseCase
 import org.koin.core.component.KoinComponent
-import org.koin.core.component.inject
-import org.example.project.common.AppEvent
-import org.example.project.data.model.MovieDetailsDto
 
-class MovieDetailsViewModel: ViewModel(), KoinComponent {
- private  val getMovieDetailsUseCase: GetMovieDetailsUseCase by inject()
+class MovieDetailsViewModel(private val getMovieDetailsUseCase: GetMovieDetailsUseCase): ViewModel(), KoinComponent {
     private val _state = MutableStateFlow(ScreenState())
     val state: StateFlow<ScreenState> = _state
 
