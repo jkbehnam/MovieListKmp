@@ -1,6 +1,6 @@
 # 🎥 MovieListKmp 🌟  
 Welcome to **MovieListKmp** – a **Compose Multiplatform** project built with **MVI architecture** and **Clean Architecture principles**. This app leverages **The Movie Database (TMDB) API** to bring movie enthusiasts a cross-platform experience like no other! 🚀  
-
+![Demo](DemoGif.gif)
 ---
 
 ## 🛠️ Tech Stack  
