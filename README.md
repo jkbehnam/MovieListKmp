@@ -1,18 +1,57 @@
-This is a Kotlin Multiplatform project targeting Android, Web, Desktop.
+Here's an updated README note reflecting the additional details about the project:
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+---
 
+# 🎥 MovieListKmp 🌟  
+Welcome to **MovieListKmp** – a **Compose Multiplatform** project built with **MVI architecture** and **Clean Architecture principles**. This app leverages **The Movie Database (TMDB) API** to bring movie enthusiasts a cross-platform experience like no other! 🚀  
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+---
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+## 🛠️ Tech Stack  
+This project is powered by some of the best tools in the Kotlin ecosystem:  
+- **Compose Multiplatform**: Build beautiful UIs for Android, iOS, Desktop, and beyond 🎨✨  
+- **MVI Architecture**: A modern architecture pattern for state management 📊  
+- **Clean Architecture**: Maintainable and scalable codebase 🧹  
+- **Ktor**: Efficient and flexible networking 🌐  
+- **Koin**: Lightweight dependency injection framework 🧩  
+- **Coil**: Fast and smooth image loading 🖼️  
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+---
+
+## 🌟 Features  
+- **Cross-Platform Awesomeness**: Write once, run anywhere – Android, Web, Desktop, and more! 🌍  
+- **Movie Data**: Fetch real-time movie details using the TMDB API 🎬  
+- **Modern UI**: Designed with Compose Multiplatform for an elegant and responsive interface 📱💻  
+- **Clean & Testable Code**: Built with Clean Architecture and MVI for easy maintenance and testing ✅  
+
+---
+
+## 🚀 Getting Started  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/jkbehnam/MovieListKmp.git
+   ```  
+2. Open the project in [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [Android Studio](https://developer.android.com/studio).  
+3. Set up your TMDB API key:  
+   - Get your API key from [TMDB](https://www.themoviedb.org/).  
+   - Add it to the project’s configuration.  
+4. Run the app on your desired platform – Android, iOS, or Desktop!  
+
+---
+
+## 🤝 Contributions  
+We 💖 contributions! Whether it's fixing bugs, adding features, or improving documentation, feel free to submit a pull request or open an issue. Together, we can make **MovieListKmp** even better! 🚀  
+
+---
+
+## 📜 License  
+This project is licensed under the [MIT License](LICENSE).  
+
+---
+
+### ⭐ Show Some Love!  
+If you like this project, don’t forget to give it a **⭐** and share it with your friends and fellow developers!  
+
+--- 
+
+Feel free to customize this further if you’d like to add more specific details about the app or its usage! 😊
